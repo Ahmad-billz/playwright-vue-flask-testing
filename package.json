@@ -1,0 +1,23 @@
+{
+  "name": "playwright-vue-flask-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmad-billz/playwright-vue-flask-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmad-billz/playwright-vue-flask-testing/issues"
+  },
+  "homepage": "https://github.com/Ahmad-billz/playwright-vue-flask-testing#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.4.0",
+    "wait-on": "^9.0.4"
+  }
+}
