@@ -183,7 +183,7 @@ export default {
 methods: {
     // 1 GET METHOD
     getGames() {
-      const path = 'http://localhost:5000/games';
+      const path = 'http://127.0.0.1:5000/games';
       axios.get(path)
         .then((res) => {
           this.games = res.data.games;
@@ -195,7 +195,7 @@ methods: {
 
     // 2 Add Game Button
     addGame(payload) {
-      const path = 'http://localhost:5000/games';
+      const path = 'http://127.0.0.1:5000/games';
       axios.post(path, payload)
         .then(() => {
           this.getGames();
@@ -265,7 +265,7 @@ methods: {
 // 4 Update Alert Message 
 // Once the update is effective, we will get a message telling us that Game Updated, and display the list of games after the update
 updateGame(payload, gameID) {
-  const path = `http://localhost:5000/games/${gameID}`;
+  const path = `http://127.0.0.1:5000/games/${gameID}`;
   axios.put(path, payload)    
     .then(() => {
       this.getGames();
@@ -293,7 +293,7 @@ onResetUpdate(e) {
 
 // Remove Game [ Delete Button ]
 removeGame(gameID) {
-  const path = `http://localhost:5000/games/${gameID}`;
+  const path = `http://127.0.0.1:5000/games/${gameID}`;
   axios.delete(path)
     .then(() => {
       this.getGames();
